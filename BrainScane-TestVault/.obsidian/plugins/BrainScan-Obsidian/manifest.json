@@ -1,0 +1,11 @@
+{
+	"id": "BrainScan-Obsidian",
+	"name": "BrainScan",
+	"version": "1.0.0",
+	"minAppVersion": "1.0.0",
+	"description": "Main BrainScan plugin for Obsidian. This plugin provides a set of tools and features to enhance your note-taking experience.",
+	"author": "Elijah Offutt of Offutt Industries",
+	"authorUrl": "https://elijahoffutt.com",
+	"fundingUrl": "https://elijahoffutt.com",
+	"isDesktopOnly": false
+}
