@@ -18,5 +18,8 @@ main.js
 # obsidian
 data.json
 
+# Using Obsidian as my Markdown editor, I don't want to include the .obsidian folder in the repo. It contains my personal settings and plugins, which are not relevant to the project itself.
+.obsidian
+
 # Exclude macOS Finder (System Explorer) View States
 .DS_Store
