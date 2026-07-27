@@ -20,10 +20,12 @@ export default class MyPlugin extends Plugin {
 	async onload() {
 		await this.loadSettings();
 
+		new Notice('BrainScan Initialized');
+
 		// This creates an icon in the left ribbon.
-		this.addRibbonIcon('dice', 'Sample', (_evt: MouseEvent) => {
+		this.addRibbonIcon('rocket', 'Sample', (_evt: MouseEvent) => {
 			// Called when the user clicks the icon.
-			new Notice('This is a notice!');
+			new Notice(_evt.toString());
 		});
 
 		// This adds a status bar item to the bottom of the app. Does not work on mobile apps.
@@ -77,7 +79,7 @@ export default class MyPlugin extends Plugin {
 		// If the plugin hooks up any global DOM events (on parts of the app that doesn't belong to this plugin)
 		// Using this function will automatically remove the event listener when this plugin is disabled.
 		this.registerDomEvent(activeDocument, 'click', (_evt: MouseEvent) => {
-			new Notice('Click');
+			// new Notice('Click');
 		});
 
 		// When registering intervals, this function will automatically clear the interval when the plugin is disabled.
@@ -86,7 +88,9 @@ export default class MyPlugin extends Plugin {
 		);
 	}
 
-	onunload() {}
+	onunload() {
+		new Notice('Unloading plugin');
+	}
 
 	async loadSettings() {
 		this.settings = Object.assign(

@@ -1,11 +1,11 @@
 {
-	"id": "sample-plugin",
-	"name": "Sample Plugin",
+	"id": "BrainScan-Obsidian",
+	"name": "BrainScan-Obsidian",
 	"version": "1.0.0",
 	"minAppVersion": "1.0.0",
-	"description": "Demonstrates some of the capabilities of the Obsidian API.",
-	"author": "Obsidian",
-	"authorUrl": "https://obsidian.md",
-	"fundingUrl": "https://obsidian.md/pricing",
+	"description": "The Official BrainScan Obsidian Plugin. This plugin allows you to visualize and analyze brain scan data directly within Obsidian.",
+	"author": "Elijah Offutt",
+	"authorUrl": "https://elijahoffutt.com",
+	"fundingUrl": "https://elijahoffutt.com/donate",
 	"isDesktopOnly": false
 }

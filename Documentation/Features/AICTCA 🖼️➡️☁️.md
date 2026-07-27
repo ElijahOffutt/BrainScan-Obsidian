@@ -2,10 +2,14 @@
 tags:
   - FEATURE
   - WIP
+  - Upload
+  - Cloud
+  - Photo
+  - Image
 ---
-# Automatic Image Conversion to Cloud Availability
+# Automatic Image Conversion to Cloud Availability 
 ---
-The **AICTCA** feature automatically scans repo for images in the designated images directory and uploads them to any cloud based destinations such that they are made available to all services that link to them.
+The **[[FEATURE - AICTCA | AICTCA]]** feature automatically scans repo for images in the designated images directory and uploads them to any cloud based destinations such that they are made available to all services that link to them.
 
 ## Problem this solves
 ---

@@ -4,26 +4,51 @@ tags:
   - WIP
   - Draft
 ---
-# BrainScan
+# BrainScan 🧠
 ## Software Requirements Specification (SRS)
 
 > **Purpose:** BrainScan is an Obsidian plugin for transforming a knowledge vault into a structured, context-aware knowledge graph. This document serves as the project's living design document and source of truth.
 
 ---
 
-# 1. Overview
+## 🤔 Problem Statement 
+---
+> _"Knowledge exists only in relation."_  
+	**— Gregory Bateson**
+---
 
-## Vision
+Modern methods of evaluating technical knowledge rely heavily on resumes, interviews, certifications, and professional networking platforms; all of which provide only fragmented, inaccurate or indirect evidence of an individual's actual understanding or proficiency. These current solutions not only have been subject to the typical signal corruptions of, *"Good Hart's Law"*; but also have been behind some of the greatest short coming in the process of professional understanding, leading to BILLIONS of dollars in wasted productivity and lost revenues. 
 
-Create a local-first knowledge platform that scans an Obsidian vault, understands relationships between notes, and generates a rich contextual graph for visualization, search, AI interaction, and publishing.
+These methods are susceptible to bias, optimization, and incomplete representations of knowledge, making it difficult to accurately demonstrate expertise or understand how a person's knowledge is connected and applied. I seek to mediate and further reduce these methods as valid means of aptitude in place of a more realistic way of showcasing capability and understanding. I look to do this through my own understating of the following fields of study . . . 
 
-## Goals
+- Epistemology 
+- Ontology 
+- Sociology
+- Contextual Engineering
+- Machine Learning
 
-- Generate a contextual knowledge graph.
-- Enforce consistent vault organization.
-- Improve knowledge discovery through context.
-- Integrate local AI for analysis and automation.
-- Export structured data for external applications.
+BrainScan addresses this problem by transforming an Obsidian vault (Current Chosen Medium) into a structured, context-aware knowledge graph that represents knowledge as an interconnected system rather than a collection of isolated documents. Through standardized metadata, taxonomy enforcement, contextual relationship discovery, and local AI analysis, BrainScan provides a foundation for authentic, transparent, and evolving knowledge representation. 
+
+This project is the first step toward a future where technical knowledge can be explored, understood, and evaluated through the structure, depth, and context of what a person knows, rather than solely through traditional credentials or interviews.
+
+## Overview
+
+### Vision
+
+Create a local-first knowledge platform that scans an Obsidian vault, understands relationships between notes, and generates a rich contextual graph for visualization, search, AI interaction, and publishing. Allow users to have a workflow that uses AI to create a interactive knowledge experience. 
+
+
+## How it works 🔩
+---
+
+
+### Goals
+
+- [ ] Generate a contextual knowledge graph.
+- [ ] Enforce consistent vault organization.
+- [ ] Improve knowledge discovery through context.
+- [ ] Integrate local AI for analysis and automation.
+- [ ] Export structured data for external applications.
 
 ## Non-Goals
 
@@ -47,8 +72,10 @@ BrainScan follows:
   - Services
 - **Feature (Domain) Organized Repository**
   - Each feature contains its own controllers, services, models, configuration, and supporting files.
+  - This allows a Enterprise style of workflow that tightly couples functionality but balances consumption and availability of computational instances
+  - This project is not built using Java to there will be work arounds for things like Services and Beans which makes the Dependency Injection Paradigm easy to use.
 
-The project emphasizes high cohesion, low coupling, and feature ownership.
+The project emphasizes high cohesion, balanced coupling, and feature ownership.
 
 ---
 
