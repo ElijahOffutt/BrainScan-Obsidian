@@ -12,6 +12,8 @@ import {
 	SampleSettingTab,
 } from './settings';
 
+import { BrainScanPluginView } from './core/PluginView';
+
 // Remember to rename these classes and interfaces!
 
 export default class MyPlugin extends Plugin {
@@ -22,11 +24,43 @@ export default class MyPlugin extends Plugin {
 
 		new Notice('BrainScan Initialized');
 
-		// This creates an icon in the left ribbon.
-		this.addRibbonIcon('rocket', 'Sample', (_evt: MouseEvent) => {
-			// Called when the user clicks the icon.
-			new Notice(_evt.toString());
-		});
+
+		// Define Button Confguration Types & Inteffaces
+		interface MouseEventHandler { (_evt: MouseEvent): void;}
+		type RibbonButtonConfig = [
+			string, // Icon name from https://lucide.dev/icons 
+			string, // Tooltip text
+			MouseEventHandler // Callback function to be invoked on click
+		];
+
+		// Configure ribbon icon & Button array
+		let ribbonButtonConfig: RibbonButtonConfig = [
+			'brain', // Icon name from https://lucide.dev/icons
+			'Brain Scan', // Tooltip text
+			async (_evt: MouseEvent) => { // Callback function to be invoked on click
+		
+				// Grab an empty tab slot in the left sidebar
+				// false = reuse existing slot, don't force a new split
+				const leaf = this.app.workspace.getLeftLeaf(false);
+
+				// Load our registered 'plugin-view' into that slot and make it the focused tab
+				// active: true = this tab gets focused automatically
+				await leaf!.setViewState({ type: 'plugin-view', active: true });
+
+				// If the left sidebar is collapsed, this opens it and brings our tab into view
+				this.app.workspace.revealLeaf(leaf!);
+
+			}
+		];
+
+		// This creates an icon in the left ribbon for BrainScan using a Brain Icon.
+		this.addRibbonIcon(...ribbonButtonConfig);
+
+		// This adds a view to the right sidebar.
+		this.registerView(
+			'plugin-view',
+			(leaf) => new BrainScanPluginView(leaf),
+		);
 
 		// This adds a status bar item to the bottom of the app. Does not work on mobile apps.
 		const statusBarItemEl = this.addStatusBarItem();
@@ -91,6 +125,7 @@ export default class MyPlugin extends Plugin {
 	onunload() {
 		new Notice('Unloading plugin');
 	}
+
 
 	async loadSettings() {
 		this.settings = Object.assign(
