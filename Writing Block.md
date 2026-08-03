@@ -1,4 +1,4 @@
-I need to know the following in as few as steps as possible to get to something that is working as quickly as possible in Obsidian plugin development. 
+Oh I see. So if I am understanding this right, I would be building the bridge in to the window it self given that its based on electron and the windows is basically free real-estate for me to put functionality in to that both these instances of the solution will share. My plugin will have access to the window given that its a chromium based solution and my interface will as well given that its all in the same window; is that about right? But now I wonder, given that the iframe approach puts it in a different window and or sub-window, wouldn't that create a barrier between them? Is that mitigated with the `window.parent` reference you had in code block example one of the most recent replay? Does `window.parent` return the parent window in general?
 
-- How do i create a load a view for my plugin that is not in the settings tab. I want to navigate to the plugin view in the left sidebar after clicking the left ribbon icon?
-- How do i automatically navigate to that view after initialization of the plugin in the settings view of obsidian?
+
+

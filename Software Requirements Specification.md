@@ -7,17 +7,17 @@ tags:
 # BrainScan 🧠
 ## Software Requirements Specification (SRS)
 
-> **Purpose:** BrainScan is an Obsidian plugin for transforming a knowledge vault into a structured, context-aware knowledge graph. This document serves as the project's living design document and source of truth.
+> **Purpose:** BrainScan is an Obsidian plugin for transforming a knowledge vault into a structured, context-aware knowledge graph. It does so by using AI and simple technology to bring structure to context. This is part of the greater Connectome(Coming Soon) project.
 
 ---
-
 ## 🤔 Problem Statement 
 ---
 > _"Knowledge exists only in relation."_  
 	**— Gregory Bateson**
 ---
 
-Modern methods of evaluating technical knowledge rely heavily on resumes, interviews, certifications, and professional networking platforms; all of which provide only fragmented, inaccurate or indirect evidence of an individual's actual understanding or proficiency. These current solutions not only have been subject to the typical signal corruptions of, *"Good Hart's Law"*; but also have been behind some of the greatest short coming in the process of professional understanding, leading to BILLIONS of dollars in wasted productivity and lost revenues. 
+Modern methods of evaluating technical knowledge rely heavily on resumes, interviews, certifications, and professional networking platforms; all of which provide only fragmented, inaccurate or indirect evidence of an individual's actual understanding or proficiency. These current solutions not only have been subject to the typical signal corruptions via, *"Good Hart's Law"*; but also have been behind some of the greatest short comings in the process of professional understanding, leading to **BILLIONS** of dollars in wasted productivity a
+nd lost revenues 💸. 
 
 These methods are susceptible to bias, optimization, and incomplete representations of knowledge, making it difficult to accurately demonstrate expertise or understand how a person's knowledge is connected and applied. I seek to mediate and further reduce these methods as valid means of aptitude in place of a more realistic way of showcasing capability and understanding. I look to do this through my own understating of the following fields of study . . . 
 
