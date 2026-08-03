@@ -21,15 +21,7 @@ export class BrainScanPluginView extends ItemView {
         iframe.src = 'http://localhost:4200'; // Replace with your desired URL
         // Add more elements to your view as needed
 
-        window.addEventListener('message', (event) => {
-            if (event.origin !== 'http://localhost:4200') {
-                return; // Ignore messages from other origins
-            } else {
-                new Notice('Received message from iframe: ' + event.data);
-                // console.log('Received message from iframe:', event.data);
-                // Handle the message as needed
-            }
-        });
+        
     }
 
     async onClose(): Promise<void> {
