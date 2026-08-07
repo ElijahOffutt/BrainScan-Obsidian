@@ -1,6 +1,6 @@
 import { Notice } from 'obsidian';
 
-import BridgeService from './BridgeService';
+import BridgeService from './MessageBridgeService';
 
 export default class BridgeController   {
 

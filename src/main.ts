@@ -16,13 +16,21 @@ import { BrainScanPluginView } from './core/PluginView';
 
 // Remember to rename these classes and interfaces!
 
+/*
+BOOT STRAP NON-OBSIDIAN FEATURES/SERVICES/TOOLS HERE
+*/
+
 export default class MyPlugin extends Plugin {
 	settings!: MyPluginSettings;
 
 	async onload() {
+
+		/*
+			BOOT STRAP OBSIDIAN FEATURES/SERVICES/TOOLS HERE HERE
+		*/
+
 		await this.loadSettings();
 
-		new Notice('BrainScan Initialized');
 
 
 		// Define Button Confguration Types & Inteffaces
